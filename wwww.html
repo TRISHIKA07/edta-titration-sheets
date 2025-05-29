@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDTA Titration Observation Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      line-height: 1.6;
+      background-image: url('./picture.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color:black;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: transparent;/*changed*/
+    }
+    th, td {
+      padding: 5px 10px;
+      text-align: center;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid black;
+      background: transparent;
+      color: black;
+      width: 100px;
+    }
+    h2, h3, p {
+      background-color: transparent;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>OBSERVATIONS</h2>
+
+  <h3>PART A: Preparation of standard solution of disodium salt of EDTA</h3>
+  <p>Weight of weighing bottle + EDTA salt, W1 = <input type="text" /> g</p>
+  <p>Weight of empty weighing bottle, W2 = <input type="text" /> g</p>
+  <p>Weight of EDTA transferred, (W1 - W2) = <input type="text" /> g</p>
+  <p>
+    Molarity of EDTA = 
+    <span style="display:inline-block;">(Weight of EDTA salt / Molecular weight of EDTA)</span> × 4
+  </p>
+  <p>
+    Molarity of EDTA = ( <input type="text" /> / 372.24 ) × 4 = 
+    <input type="text" /> M (X)
+  </p>
+
+  <h3>PART B: Determination of total hardness of water sample</h3>
+  <p>Burette: Standard EDTA solution</p>
+  <p>Conical flask: 25 cm³ of water sample + 5 cm³ of NH<sub>3</sub>–NH<sub>4</sub>Cl buffer solution</p>
+  <p>Indicator: Eriochrome black-T.</p>
+  <p>Endpoint: Wine red to clear blue.</p>
+
+  <table>
+    <tr>
+      <th>Burette reading</th>
+      <th>I</th>
+      <th>II</th>
+      <th>III</th>
+    </tr>
+    <tr>
+      <td>Final Burette reading</td>
+      <td><input type="text" /></td>
+      <td><input type="text" /></td>
+      <td><input type="text" /></td>
+    </tr>
+    <tr>
+      <td>Initial Burette reading</td>
+      <td><input type="text" /></td>
+      <td><input type="text" /></td>
+      <td><input type="text" /></td>
+    </tr>
+    <tr>
+      <td>Volume of EDTA run down in cm³</td>
+      <td><input type="text" /></td>
+      <td><input type="text" /></td>
+      <td><input type="text" /></td>
+    </tr>
+  </table>
+
+  <p>Concordant burette reading = <input type="text" /> cm³ (Y)</p>
+
+  <h3>CALCULATIONS:</h3>
+  <p>
+    1000 cm³ of ‘X’ M EDTA = 100g of CaCO<sub>3</sub> (Molecular mass of CaCO<sub>3</sub> = 100)  
+  </p>
+  <p>⇒ ‘Y’ cm³ of ‘X’ M EDTA = ?</p>
+  <p>
+    = (100 × Y × X) / 1000 = <input type="text" /> g of CaCO<sub>3</sub> (Z)
+  </p>
+  <p>
+    25 cm³ of hard water sample contains <input type="text" /> g of CaCO<sub>3</sub> (Z)
+  </p>
+  <p>
+    ⇒ 10<sup>6</sup> cm³ of hard water sample contains = 
+    (Z × 10<sup>6</sup>) / 25 = <input type="text" /> ppm of CaCO<sub>3</sub>
+  </p>
+  <p>
+    = <input type="text" /> ppm of CaCO<sub>3</sub>
+  </p>
+
+  <h3>RESULT:</h3>
+  <p>
+    Total hardness of the given water sample = <input type="text" /> ppm of CaCO<sub>3</sub>
+  </p>
+</body>
+</html>
